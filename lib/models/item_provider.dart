@@ -10,7 +10,11 @@ ListItems get getItem => items ;
 items = item ;
 notifyListeners();
 }
-int incrementId = 0 ;  
+int incrementId (){
+  int increment = 0 ;
+  return increment += increment ; 
+}
+ 
 List<ItemModel> get item => itemId.map((id) => ListItems().getById(id)).toList();
 void add (ItemModel item){
 itemId.add(item.id);

@@ -53,7 +53,10 @@ class _TwoButtomState extends State<TwoButtom> {
           padding: const EdgeInsets.all(12.0),
           child: ElevatedButton(
             onPressed: () {
-              increment.incrementId++;
+              increment.incrementId();
+              setState(() {
+                
+              });
             },
             child: Text(
               'Next',

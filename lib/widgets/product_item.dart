@@ -23,7 +23,7 @@ var id = context.watch<ItemProvider>();
             vertical: 25,
           ),
           child: Text(
-               cart.getById(id.incrementId).name ,
+               cart.getById(id.incrementId()).name ,
                   style: const TextStyle(
                     fontSize: 40,
                     color: Colors.white,

@@ -12,7 +12,7 @@ class ProductView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var itemProvider = context.read<ItemProvider>();
-        var item = context.read<ListItems>().getById(itemProvider.incrementId);
+        var item = context.read<ListItems>().getById(itemProvider.incrementId());
         return  Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
